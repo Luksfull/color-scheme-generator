@@ -1,17 +1,18 @@
 let colorArr = []
 const colorScheme = document.getElementById('color-scheme')
+const formElement = document.getElementById('form-element')
 
 function copy(text) {
     navigator.clipboard.writeText(text).then(() => {
         console.log(`Copied text: ${text}`)
-        alert(`Copied text: ${text}`)
+        // alert(`Copied text: ${text}`)
     })
     .catch((error) => {
         console.error(`Could not copy text: ${error}`)
     })
 }
 
-document.getElementById('new-scheme').addEventListener('submit', function displayColorScheme(e) {
+formElement.addEventListener('submit', function displayColorScheme(e) {
     
     e.preventDefault()
     const color = document.getElementById('color-picker').value.slice(1)
@@ -32,7 +33,7 @@ document.getElementById('new-scheme').addEventListener('submit', function displa
             
             for (let color of colorArr) {
                 colorScheme.innerHTML += `
-                    <div id="color-hodler" class="color-holder">
+                    <div id="color-holder" class="color-holder">
                         <div class="color" id=${color}></div>
                         <button class="hex-color" id=${color} onclick="copy()">${color}</button>
                     </div>                    

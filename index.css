@@ -6,82 +6,118 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+	align-items: center;
   user-select: none;
+	background-color: #f8f6f6;
+	font-family: 'Inter', sans-serif;
 }
 
 form {
   display: flex;
+	flex-direction: column;
   justify-content: space-evenly;
 	align-items: center;
   padding: 1em;
-	border: 1px solid red;
+	gap: 0.3em;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#new-scheme {
+	display: flex;
+	gap: 0.3em;
+	justify-content: center;
 }
 
 #color-picker, #schemes-list, #get-btn {
-	
+	min-height: 2.3em;
 }
 
 #color-picker {
   border: 1px solid #D1D5DB;
+	background-color: #FFFFFF;
+	border-radius: 6px;
 }
 
 #schemes-list {
   border: 1px solid #D1D5DB;
   border-radius: 6px;
   box-shadow: 0px 1px 2px 0px #0000000D;
-  font-family: 'Inter', sans-serif;
+	background-color: #FFFFFF;
+	outline: #D1D5DB;
 }
 
 #get-btn {
-    border: 1px solid #D1D5DB;
-    border-radius: 4px;
-    box-shadow: 0px 1px 2px 0px #0000000D;
-    font-size: 12px;
-    line-height: 16px;
-    font-family: 'Inter', sans-serif;
+	background-color: #FFFFFF;
+	width: 100%;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px 0px #0000000D;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 #get-btn:hover {
-	cursor: pointer;
 	background-color: #322F2F;
 	color: #A7A0A0;
 }
 
 #color-scheme {
-    display: flex;
-    justify-content: space-around;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	gap: 0.3em;
 }
 
 .color-holder {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+  width: 100%;
+	gap: 0.3em;
 }
 
 .color {
-    height: 550px;
+	border-radius: 10px;
+  height: 5em;
+	width: 90%;
 }
 
 .hex-color {
-    border: none;
-    background: white;
-    padding-top: 1em;
-    align-self: center;
+  border: none;
+	border-radius: 5px;
+  background-color: #f8f6f6;
+  padding: 1em;
+  align-self: center;
 }
 
 .hex-color:focus {
-    outline: none;
+  outline: none;
+}
+
+.hex-color:hover {
+	background-color: #322F2F;
+	color: #f8f6f6;
+}
+
+#brand {
+	position: fixed;
+	bottom: 0%;
 }
 
 /* Media Queries */
 
-@media (min-width: 480px) {
-    body {
-        max-width: 700px;
-        min-width: 480px;
-    }
-    
+@media (max-height: 750px) {
+
     .color {
-        height: 300px;
+      height: 3em;
     }
+
+		.hex-color {
+			font-size: 0.8em;
+			padding: 0.8em;
+		}
+
 }

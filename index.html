@@ -12,7 +12,8 @@
     </head>
     <body>
         
-        <form id="new-scheme">
+        <form id="form-element">
+					<div id="new-scheme">
             <input id="color-picker" type="color" />
             <select name="available-schemes" id="schemes-list">
                 <option value="monochrome">Monochrome</option>
@@ -23,12 +24,15 @@
                 <option value="analogic-complement">Analogic-complement</option>
                 <option value="quad">Quad</option>
             </select>
-            <button id="get-btn">Get color scheme</button>
+					</div>
+          <button id="get-btn">Get color scheme</button>
         </form> 
         
         <div id="color-scheme">
-
+					<!-- This div is populated with the color scheme -->
         </div>
+
+				<h4 id="brand">CGS</h4>
         
         <script src="index.js"></script>
         
