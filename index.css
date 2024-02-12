@@ -69,6 +69,7 @@ button:hover {
 	flex-direction: column;
 	width: 100%;
 	gap: 0.3em;
+	height: 80%;
 }
 
 .color-holder {
@@ -90,6 +91,7 @@ button:hover {
 	border-radius: 5px;
   background-color: #f8f6f6;
   padding: 1em;
+	font-size: 0.8em;
   align-self: center;
 }
 
@@ -119,5 +121,21 @@ button:hover {
 			font-size: 0.8em;
 			padding: 0.8em;
 		}
+
+}
+
+@media (min-width: 740px) {
+
+	#color-scheme {
+		flex-direction: row;
+	}
+
+	.color {
+		height: 80%;
+	}
+
+	.hex-color {
+		font-size: 1em;
+	}
 
 }
