@@ -2,16 +2,6 @@ let colorArr = []
 const colorScheme = document.getElementById('color-scheme')
 const formElement = document.getElementById('form-element')
 
-// function copy(text) {
-//     navigator.clipboard.writeText(text).then(() => {
-//         console.log(`Copied text: ${text}`)
-//         // alert(`Copied text: ${text}`)
-//     })
-//     .catch((error) => {
-//         console.error(`Could not copy text: ${error}`)
-//     })
-// }
-
 formElement.addEventListener('submit', function displayColorScheme(e) {
     
     e.preventDefault()
@@ -50,8 +40,6 @@ formElement.addEventListener('submit', function displayColorScheme(e) {
 							})
 						})
 
-
-            
             document.querySelectorAll('.color').forEach(element => {
               element.style.backgroundColor = `${element.getAttribute('id')}`
             })
