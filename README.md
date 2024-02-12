@@ -4,5 +4,5 @@ The app uses The Color API (https://www.thecolorapi.com/). User can choose from 
 
 Live site deployed with neflify: https://ls-color-scheme-generator.netlify.app/
 
-![Large Screen Dislay](/images/LargeScreenDisplay.png)
-![Phone Screen Display](/images/PhoneScreenDisplay.jpeg)
+![Large Screen Dislay](/images/LargeScreen.png)
+![Phone Screen Display](/images/PhoneScreen.jpeg)
